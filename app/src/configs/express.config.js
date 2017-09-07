@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const productsRouter = require('../models/products/products.router');
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 module.exports = () => {
 

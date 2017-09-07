@@ -1,4 +1,4 @@
-var rp = require('request-promise');
+const rp = require('request-promise');
 const baseUrl = 'http://localhost:3000/api/products';
 
 const clearProducts = (done) => {
