@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 module.exports = () => {
 
     app.use(bodyParser.json());
-    app.set('port', 3000);
+    app.set('port', process.env.BASE_ECOMMERCE_EXPRESS_PORT);
 
     // routers
     app.use('/api/products', productsRouter);

@@ -1,7 +1,7 @@
 const rp = require('request-promise');
 const baseUrl = 'http://localhost:3000/api/products';
 
-const clearProducts = (done) => {
+const clearProducts = done => {
     // remove all products
     rp({
         method: 'DELETE',
